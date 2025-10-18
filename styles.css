@@ -1,0 +1,199 @@
+/* Color Palette - Leather/Brown Theme */
+:root {
+    --leather-dark: #3e2723;
+    --leather-medium: #6d4c41;
+    --leather-light: #a1887f;
+    --leather-cream: #d7ccc8;
+    --leather-accent: #8d6e63;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.bg-leather-dark {
+    background-color: var(--leather-dark) !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: color 0.3s;
+    margin: 0 0.5rem;
+}
+
+.nav-link:hover {
+    color: var(--leather-cream) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--leather-dark) 0%, var(--leather-medium) 100%);
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+}
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+.text-leather-light {
+    color: var(--leather-light);
+}
+
+.text-leather-dark {
+    color: var(--leather-dark);
+}
+
+.text-leather-medium {
+    color: var(--leather-medium);
+}
+
+/* Buttons */
+.btn-leather-light {
+    background-color: var(--leather-light);
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-leather-light:hover {
+    background-color: var(--leather-cream);
+    color: var(--leather-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.btn-leather-dark {
+    background-color: var(--leather-dark);
+    color: white;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-leather-dark:hover {
+    background-color: var(--leather-medium);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* About Cards */
+.about-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+/* Stats Section */
+.stats-section {
+    background: linear-gradient(135deg, var(--leather-medium) 0%, var(--leather-accent) 100%);
+}
+
+/* Product Cards */
+.product-card {
+    transition: all 0.3s;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+}
+
+.product-card .card-body {
+    background: linear-gradient(to bottom, white 0%, #fafafa 100%);
+}
+
+/* Contact Form */
+.contact-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-control:focus {
+    border-color: var(--leather-medium);
+    box-shadow: 0 0 0 0.2rem rgba(109, 76, 65, 0.25);
+}
+
+.form-label {
+    color: var(--leather-dark);
+    font-weight: 500;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section Spacing */
+section {
+    scroll-margin-top: 70px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-section > .container {
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Footer */
+footer a {
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+footer a:hover {
+    opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-icon {
+        display: none;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+}
